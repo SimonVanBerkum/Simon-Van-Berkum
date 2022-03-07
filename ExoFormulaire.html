@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Exo formulaire</title>
+
+</head>
+
+<body>
+
+    <form method="post" action="https://www.google.com/">
+
+    <fieldset>
+        <legend>Vos information</legend>
+
+        <p>
+            <label for="nom">Votre nom ?</label>
+            <input type="text" name="nom" id="nom" placeholder="Dubois" required /></p>
+        <p>
+            <label for="prenom">Votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" placeholder="Camille" required /></p>
+        <p>
+            <label for="age">Votre date de naissance ?</label>
+            <input type="date" name="age" id="age" required /></p>
+        <p>
+            <label for="telephone">Votre numéro de téléphone ?</label>
+            <input type="tel" name="telephone" id="telephone" placeholder="0601020304" required /></p>
+        <p>
+            <label for="email">Votre Email ?</label>
+            <input type="email" name="email" id="email" placeholder="Dubois@Camille.com" required /></p>
+        <p>
+            <label for="sexe">Votre sexe ?</label></p>
+        <p>
+            <label for="homme">Homme</label> : <input type="checkbox" name="sexe" id="homme">
+            <label for="femme">Femme</label> : <input type="checkbox" name="sexe" id="femme">
+            <label for="autre">Spécial</label> : <input type="checkbox" name="sexe" id="autre"></p>
+            <label for="pays">Votre pays ?</label>
+            <select name="pays" id="pays">
+            <optgroup label="">
+                <option value="vide"></option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="canada">Canada</option>
+                <option value="coree">Corée du nord</option>
+            </optgroup>
+            <optgroup label="USA">
+                <option value="france">France</option>
+                <option value="espagne">Espagne</option>
+            </optgroup>
+            <optgroup label="Asie">
+                <option value="Italie">Italie</option>
+                <option value="Argentine">Argentine</option>
+            </optgroup>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Précision</legend>
+
+        <p>
+            <label for="permis">Avez vous le permis B ?</label></p>
+            <p>
+            <label for="oui">Oui</label> : <input type="radio" name="permis" id="oui">
+            <label for="non">Non</label> : <input type="radio" name="permis" id="non"></p>
+    </fieldset>
+    
+    <fieldset>
+        <legend>Votre compte</legend>
+
+        <p>
+            <label for="pseudo">Choisissez un pseudo</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo" required></p>
+        <p>
+            <label for="password">Choisissez un mot de passe</label>
+            <input type="password" name="password" id="password" placeholder="P@ssw0rd" minlength="8" required></p>
+
+    </fieldset>
+    <p>
+        <input type="reset" value="Reset" /></p>
+    <p>
+        <input type="submit" value="Envoyer" /></p>
+    
+    </form>
+</body>
+</html>
